@@ -1,5 +1,5 @@
 pipeline {
-  agent {
+  agent any
     stage('Build'){
         echo "Building the project........."
     }
@@ -12,5 +12,4 @@ pipeline {
     stage('Release'){
         echo "Releasing the project........."
     }
-  }
 }
